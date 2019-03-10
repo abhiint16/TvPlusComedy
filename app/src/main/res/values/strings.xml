@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Humor</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="google_maps_key">Map</string>
+    <string name="banner_ad_unitId">ca-app-pub-4601978574230707/1849456275</string>
+    <string name="interstitial">ca-app-pub-4601978574230707/4802922675</string>
+    <string name="interstitial_utubeview">ca-app-pub-4601978574230707/2591159470</string>
+
+</resources>

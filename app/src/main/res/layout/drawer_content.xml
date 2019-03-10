@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/main_coordinator">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/main_appbarlayout">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:id="@+id/main_collapsing"
+            app:collapsedTitleGravity="left"
+            app:collapsedTitleTextAppearance="@color/tabStripColor"
+            app:contentScrim="@color/toolbar"
+            app:expandedTitleMarginEnd="20dp"
+            app:expandedTitleMarginStart="40dp"
+            app:expandedTitleGravity="bottom"
+            app:expandedTitleTextAppearance="@color/tabStripColor"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+<!--
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:fitsSystemWindows="true"
+                android:id="@+id/main_recyclerview"
+                android:background="@color/tabStripColor">
+
+            </android.support.v7.widget.RecyclerView>-->
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:id="@+id/main_toolbar"
+                android:elevation="10dp"
+                android:titleTextColor="@color/tabStripColor"
+                app:layout_collapseMode="pin"
+                android:title="@string/app_name">
+
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:fadeScrollbars="false"
+        android:scrollbarFadeDuration="0"
+
+        android:id="@+id/main_nested">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TabLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                app:tabSelectedTextColor="@color/tabStripColor"
+                android:background="@color/toolbar"
+                app:tabIndicatorColor="@color/tabStripColor"
+                app:tabIndicatorHeight="1.5dp"
+                android:id="@+id/tablayout">
+
+            </android.support.design.widget.TabLayout>
+
+            <android.support.v4.view.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:id="@+id/pager"
+                android:fitsSystemWindows="true">
+
+            </android.support.v4.view.ViewPager>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

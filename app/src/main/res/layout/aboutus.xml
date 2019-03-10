@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<include layout="@layout/toolbar"></include>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="8">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/tabStripColor"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:text="@string/app_name"
+            android:textSize="50sp"
+            android:gravity="center"
+            android:textStyle="italic|bold"
+            android:textColor="@color/toolbar"
+            android:layout_margin="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This App is designed to take its users to the world of Humor .\n \n We've tried to make a platform to avoid any confusion once someone wants to get into the world of humour .\n\nThis App contains ,\n \nWEB SERIES\nSTANDUP COMEDY\nTALK SHOWS\n\nFeel free to make any suggestion . If you need anything that we can offer please let us know , we'll try our best to make your life a bit simpler .\n\n A very warm welcome to this app .
+\n\nThanks!"
+        android:layout_margin="15dp"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        />
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

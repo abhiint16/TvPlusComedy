@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#8c002f</color>
+    <color name="colorPrimaryDark">#690023</color>
+    <color name="colorAccent">#630031</color>
+    <color name="tabStripColor">#fff</color>
+    <color name="tabTextUnselected">#bfbfbf</color>
+    <color name="toolbar">#8c002f</color>
+<color name="black">#000</color>
+    <color name="toolbar2">#612000</color>
+    <color name="toolbar3">#660033</color>
+    <color name="fragment_back">#dadada</color>
+    <color name="none">#00ffffff</color>
+</resources>

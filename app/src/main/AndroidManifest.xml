@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sixteenmb.abhishekint.humor">
+<!--    //_16mb.abhishek.humor-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+
+    <application
+        android:name="com.sixteenmb.abhishekint.humor.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/abhi"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/abhi"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"></meta-data>
+       <!-- <activity android:name=".Splash_Screen"
+            android:screenOrientation="portrait"
+            >
+            &lt;!&ndash;<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>&ndash;&gt;
+        </activity>-->
+        <activity
+            android:name="com.sixteenmb.abhishekint.humor.MainActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.CHOOSER" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!--<intent-filter android:label="@string/app_name">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                &lt;!&ndash; Accepts URIs that begin with "http://recipe-app.com/recipe" &ndash;&gt;
+                <data android:scheme="http"
+                    android:host="flikster.com"
+                    android:pathPrefix="/home" />
+            </intent-filter>-->
+        </activity>
+        <activity
+            android:name="com.sixteenmb.abhishekint.humor.Youtube_recycler_view"
+            android:parentActivityName="com.sixteenmb.abhishekint.humor.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sixteenmb.abhishekint.humor.Youtube_video_play"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="com.sixteenmb.abhishekint.humor.Send_direct_msg" />
+        <activity
+            android:name="com.sixteenmb.abhishekint.humor.AboutUs"
+            android:parentActivityName="com.sixteenmb.abhishekint.humor.MainActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent"></activity>
+    </application>
+
+</manifest>

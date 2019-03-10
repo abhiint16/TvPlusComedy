@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "232523264945",
+    "firebase_url": "https://humorous-21e52.firebaseio.com",
+    "project_id": "humorous-21e52",
+    "storage_bucket": "humorous-21e52.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:232523264945:android:794cd8e51c8e03fc",
+        "android_client_info": {
+          "package_name": "com.sixteenmb.abhishekint.tvpluscomedy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "232523264945-dii572b20bn9afrvosf2uru69r19hmn6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sixteenmb.abhishekint.tvpluscomedy",
+            "certificate_hash": "a976287b68cb37c229c63bc2f60d533f233e1161"
+          }
+        },
+        {
+          "client_id": "232523264945-grde6thc5m1nh4rdjsgm0p0vq2sfmi10.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOmoLfKsZzZoI74kcDe6vu7c1OMbgjFJE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "232523264945-grde6thc5m1nh4rdjsgm0p0vq2sfmi10.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

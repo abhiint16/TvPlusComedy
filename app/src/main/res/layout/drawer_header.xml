@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@color/black">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/drawer_header_img"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/abhi"
+        android:background="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:layout_toRightOf="@+id/drawer_header_img"
+        android:layout_marginTop="20dp"
+        android:id="@+id/drawer_header_title"
+        android:textSize="20sp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/tabStripColor"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="' A Quality Series Can Heal You From Inside '"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/tabStripColor"/>
+</RelativeLayout>
